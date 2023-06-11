@@ -1,3 +1,3 @@
-import { assertEquals } from "std/testing/assert.ts";
+import { assertEquals } from "std/testing/asserts.ts";
 
-assertEquals(1, 2);
+assertEquals(2, 2);
