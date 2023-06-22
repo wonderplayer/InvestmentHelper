@@ -2,7 +2,8 @@ export type ScreenerRequest = {
     only: Array<string>;
     dividend_frequency: Array<string>;
     asset_class?: string;
-    per_page: number
+    per_page: number;
+    tab: string
 }
 
 export type ScreenerResponse = {
@@ -14,9 +15,12 @@ type Meta = {
     total_records: number
 }
 
-type Data = {
+export type Data = {
     ytd: string,
-    price: string,
+    dividend: string,
+    dividend_yield: string,
+    annual_dividend: string,
+    dividend_frequency: string,
     symbol: Symbol
 }
 
